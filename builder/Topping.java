@@ -1,3 +1,3 @@
 enum Topping {
-    
+    PICKLES,TOMATO
 }

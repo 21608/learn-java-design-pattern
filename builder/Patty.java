@@ -1,3 +1,3 @@
 enum Patty {
-    
+    MEAT,CHICKEN
 }
