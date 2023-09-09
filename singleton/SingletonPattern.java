@@ -1,10 +1,7 @@
 final class SingletonPattern {
-    private static SingletonPattern instance;
-    private SingletonPattern(){};
-    public static synchronized SingletonPattern getInstance() {
-        if(instance == null) {
-            instance = new SingletonPattern();
-        }
-        return instance;
+    private static final SingletonPattern instance = new SingletonPattern();
+    private SingletonPattern() {}
+    public static SingletonPattern getInstance() {
+      return SingletonPattern.instance;
     }
 }
